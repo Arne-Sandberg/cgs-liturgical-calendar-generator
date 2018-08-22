@@ -6,8 +6,7 @@ const PrismLines = ({
   startPrismWidthPrisms,
   prismGapWidthPrisms,
 }) => (
-  <g>
-  </g>
+  <g />
 );
 
 export default PrismLines;

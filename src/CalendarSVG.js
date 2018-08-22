@@ -4,14 +4,14 @@ import PrismLines from './PrismLines';
 
 const CalendarSVG = ({
   squareSize = 14.5,
-  outerRadius = 11.75/2,
-  arcThickness = 2.5/2,
+  outerRadius = 11.75 / 2,
+  arcThickness = 2.5 / 2,
   prismThickness = 1,
   prismCount = 52,
   startPrismWidthPrisms = 0.5,
   prismGapWidthPrisms = 0,
-  outerArcs = [ 38.5, 14 ],
-  innerArcs=[.5, 24, 1, 6, 1, 6, 6, 3, 1, 4]
+  outerArcs = [38.5, 14],
+  innerArcs = [0.5, 24, 1, 6, 1, 6, 6, 3, 1, 4],
 }) => {
   const cx = squareSize / 2;
   const cy = squareSize / 2;

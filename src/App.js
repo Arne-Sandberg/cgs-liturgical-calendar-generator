@@ -11,10 +11,10 @@ class App extends Component {
         </header>
         <div style={{
           margin: '1em',
-        }}>
-        <svg viewBox={`0 0 ${30} ${30}`}>
-            <CalendarSVG
-            />
+        }}
+        >
+          <svg viewBox={`0 0 ${30} ${30}`}>
+            <CalendarSVG />
           </svg>
         </div>
       </div>

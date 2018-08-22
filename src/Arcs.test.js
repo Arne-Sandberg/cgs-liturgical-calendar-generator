@@ -6,4 +6,3 @@ it('calculates totals', () => {
 
   expect(output).toEqual([1, 2, 3, 4, 5]);
 });
-

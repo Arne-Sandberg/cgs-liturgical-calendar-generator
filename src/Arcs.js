@@ -1,6 +1,6 @@
 import React from 'react';
 
-const toTotals = (lengths) => lengths.reduce((acc, current) => {
+const toTotals = lengths => lengths.reduce((acc, current) => {
   const last = acc.length ? acc[acc.length - 1] : 0;
   acc.push(current + last);
   return acc;
@@ -12,12 +12,12 @@ const Arcs = ({
   arcs,
   cx,
   cy,
-  label="",
+  label = '',
 }) => {
   const totals = toTotals(arcs);
   console.log(totals);
   // TODO How to account for the start block?
-  const angles = totals.map(arc => arc * Math.PI * 2 / 52.5)
+  const angles = totals.map(arc => arc * Math.PI * 2 / 52.5);
   const innerRadius = outerRadius + width;
   const lines = angles.map(angle => (
     <line
@@ -41,4 +41,4 @@ export default Arcs;
 
 export {
   toTotals,
-}
+};
