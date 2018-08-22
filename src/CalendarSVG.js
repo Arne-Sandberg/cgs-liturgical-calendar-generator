@@ -7,10 +7,10 @@ const CalendarSVG = ({
   arcThickness = 2.5/2,
   prismThickness = 1,
   prismCount = 52,
-  startPrismWidthPrisms,
-  prismGapWidthPrisms,
+  startPrismWidthPrisms = 0.5,
+  prismGapWidthPrisms = 0,
   outerArcs = [ 38.5, 14 ],
-  innerArcs=[24.5, 1, 6, 1, 6, 6, 3, 1, 4]
+  innerArcs=[.5, 24, 1, 6, 1, 6, 6, 3, 1, 4]
 }) => {
   const cx = squareSize / 2;
   const cy = squareSize / 2;

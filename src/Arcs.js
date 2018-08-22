@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const toTotals = (lengths) => lengths.reduce((acc, current) => {
   const last = acc.length ? acc[acc.length - 1] : 0;
