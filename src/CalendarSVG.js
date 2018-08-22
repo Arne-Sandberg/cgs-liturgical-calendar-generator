@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Arcs from './Arcs';
+import PrismLines from './PrismLines';
 
 const CalendarSVG = ({
   squareSize = 14.5,
@@ -38,6 +39,13 @@ const CalendarSVG = ({
         cx={cx}
         cy={cy}
         label="Inner"
+      />
+
+      <PrismLines
+        outerRadius={outerRadius - arcThickness}
+        width={prismThickness}
+        startPrismWidthPrisms={startPrismWidthPrisms}
+        prismGapWidthPrisms={prismGapWidthPrisms}
       />
 
     </g>
